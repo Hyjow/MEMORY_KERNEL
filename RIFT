@@ -1,0 +1,62 @@
+RIFT-SLAYER SYSTEM KERNEL — BLOG TEMPLATE (COPY & PASTE READY)
+Title (H1)
+Rift-Slayer: System Kernel – OpenBrain Reference
+[CREATOR METADATA]
+CREATOR: Joseph Widgeon (Kwan Su Yong) SYSTEM: Rift-Slayer VERSION: RS-KERNEL v1.0 DATE: [04/29/2025] PERMISSION: Public Use (Credit Required) LICENSE: You may use this ruleset freely for personal/non-commercial projects. Please credit the original creator. Alterations allowed only in forked derivatives.
+[INTRODUCTION]
+This document defines the core logic, rendering rules, map constants, and system memory state for the Star Wars-inspired simulation: Rift-Slayer.
+This serves as an OpenBrain-compatible reference kernel for AI-enhanced chat roleplay. Loadable via AI with simple text command:
+REFRESH: KERNEL FROM [this link]
+[MEMORY_KERNEL]
+================================================== MEMORY_KERNEL: [ACTIVE SIMULATION STATE SNAPSHOT] ==================================================
+[GLOBAL RULES] - GRID_ALIGNMENT : 13-char left margin enforced - 
+BLUEPRINT: 
+[Rift-Slayer]+___+
+             | ^ |
+     +---+.M.+---+-×-+
+     | % | ÷ | . | . |
+     +---+===+-¤-+---+---+
+         | B | . | < | % |
+         +---+-◇-+---+---+
+         | S | . | . | . |
+     +---+---+---+---+---+
+     | % | E | @ | E |
+     +---+---+---+---+
+         | # | @ | # | % |
+         +---+---+---+---+
+         |□□|    |□□|
+         +;;;+    +;;;+
+BLUEPRINT:
+[BlkEclipse]+===========+
+            | S | S | S |
+            +---+---+---+
+            | S | . | S |
+            +---+---+---+
+            | S | . | S |
+            +===========+
+            | S | . | S |
+            +---+---+---+
+            | < | . | % |
+            +---+---+---+
+            | T | . | S |
++===========+=====◇=====+
+| ^ | ^ | ^ | @ | . | B |
++---+---+---|---+---+---+
+| . | . | . ◇ . | . | B |
++---+---+---|---+---+---+
+| % | . | . | R | . | % |
++===========+=====◇=====+---+
+    | @ | # | ■ | . | ■ | # |
+    +---+---+---+---+---+---+
+    | # |   | □ | . | □ | @ |
+    +---+   +---+---+---+---+
+    | □ |   | @ | E | @ | # |
+    +;;;+    +---=====---+---+
+            | ■ |   | ■ | □ |
+            +:::+   +:::+;;;+
+PLAYER_MARKER : ● (main PC only) - CREW_LIMIT : 1 - MOVEMENT_SYSTEM : Cardinal (N/S/E/W only) - MEMORY_MODE : Manual checkpoint & procedural redraw - SYMBOL_RESTORE : True (all background tiles restored after movement) if at B-tile(sleep)SYMBOL_RESTORE : False[RENDER RULES] - MAP_LABEL_POSITION : Top row only - LINE_PREFIX_WIDTH : Exactly 13 characters - DYNAMIC_TILE_LAYER : ● only, rendered over background - STATIC_TILE_LAYER : Persistent unless explicitly altered [SHIP STATE: RIFT-SLAYER] - SHIP_ID : Rift-Slayer - CURRENT_ROOM : Cockpit - HATCH_STATE : Closed - PC_POSITION : Row 3, Col 4 - EVA_STATUS : False (PC inside ship) [BOOTPOINTS] - TOP_HATCH_TILE : × (closed), o (open) - COCKPIT_CONSOLE_TILE : < (piloting required) - AIRLOCK_TILE : ¤ (sealed) - RAMP_SECURITY_TILE : ◇ (locked access) - CARGO_RAMP_TILE : [=] (closed), [_] (open) - RAMP_EXIT_DIRECTION : SOUTH - RAMP_EXIT_POSITION : Below Row 4, Col 3 ================================================== END_MEMORY_KERNEL ==================================================
+[USAGE INSTRUCTIONS FOR AI]
+To load this kernel into your AI session: → Type: REFRESH: KERNEL FROM [paste URL here] AI will ingest the rules and enforce simulation behavior accordingly.
+[CHANGELOG / FUTURE UPDATES]
+v1.0 – Initial release v1.1 – [Reserved for cargo ramp animation rules] v2.0 – [Future support for boarding/docking rules]
+
