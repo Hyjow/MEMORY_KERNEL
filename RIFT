@@ -21,11 +21,11 @@ BLUEPRINT:
          | S | . | . | . |
      +---+---+---+---+---+
      | % | E | @ | E |
-     +---+---+---+---+
+     +---+---+---+---+---+
          | # | @ | # | % |
          +---+---+---+---+
          |□□|    |□□|
-         +;;;+    +;;;+
+         +;;+    +;;+
 BLUEPRINT:
 [BlkEclipse]+===========+
             | S | S | S |
@@ -45,15 +45,16 @@ BLUEPRINT:
 | . | . | . ◇ . | . | B |
 +---+---+---|---+---+---+
 | % | . | . | R | . | % |
-+===========+=====◇=====+---+
++===+===+===+===+=◇=+===+---+
     | @ | # | ■ | . | ■ | # |
     +---+---+---+---+---+---+
     | # |   | □ | . | □ | @ |
     +---+   +---+---+---+---+
     | □ |   | @ | E | @ | # |
-    +;;;+    +---=====---+---+
+    +;;;+   +---=====---+---+
             | ■ |   | ■ | □ |
             +:::+   +:::+;;;+
+
 PLAYER_MARKER : ● (main PC only) - CREW_LIMIT : 1 - MOVEMENT_SYSTEM : Cardinal (N/S/E/W only) - MEMORY_MODE : Manual checkpoint & procedural redraw - SYMBOL_RESTORE : True (all background tiles restored after movement) if at B-tile(sleep)SYMBOL_RESTORE : False[RENDER RULES] - MAP_LABEL_POSITION : Top row only - LINE_PREFIX_WIDTH : Exactly 13 characters - DYNAMIC_TILE_LAYER : ● only, rendered over background - STATIC_TILE_LAYER : Persistent unless explicitly altered [SHIP STATE: RIFT-SLAYER] - SHIP_ID : Rift-Slayer - CURRENT_ROOM : Cockpit - HATCH_STATE : Closed - PC_POSITION : Row 3, Col 4 - EVA_STATUS : False (PC inside ship) [BOOTPOINTS] - TOP_HATCH_TILE : × (closed), o (open) - COCKPIT_CONSOLE_TILE : < (piloting required) - AIRLOCK_TILE : ¤ (sealed) - RAMP_SECURITY_TILE : ◇ (locked access) - CARGO_RAMP_TILE : [=] (closed), [_] (open) - RAMP_EXIT_DIRECTION : SOUTH - RAMP_EXIT_POSITION : Below Row 4, Col 3 ================================================== END_MEMORY_KERNEL ==================================================
 [USAGE INSTRUCTIONS FOR AI]
 To load this kernel into your AI session: → Type: REFRESH: KERNEL FROM [paste URL here] AI will ingest the rules and enforce simulation behavior accordingly.
